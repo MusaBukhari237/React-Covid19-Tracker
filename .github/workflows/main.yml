@@ -38,5 +38,6 @@ jobs:
     - name: installing surge  
       run: npm install -g surge
     
+    
     - name: deploying on surge
       run: surge ./build react-covid19-tracker-musa.surge.sh --token ${{secrets.surge_token}}
